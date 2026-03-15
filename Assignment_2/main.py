@@ -12,7 +12,7 @@ from sklearn.model_selection import train_test_split as tts
 from sklearn.linear_model import LinearRegression
 from IPython.display import display, HTML
 
-def regression_metrics(y, yhat):
+def regression_error_metrics(y, yhat):
     """Calculate and display regression error metrics."""
     from sklearn.metrics import mean_absolute_error as MAE, mean_squared_error as MSE, mean_absolute_percentage_error as MAPE
     from IPython.display import display, HTML
@@ -56,3 +56,4 @@ def plot_regression_diagnostics(y_true, y_pred, model_name="Model"):
     plt.grid()
     plt.tight_layout()
     plt.show()
+
